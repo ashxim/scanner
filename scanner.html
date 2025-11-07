@@ -23,7 +23,7 @@
       console.log("Scanned:", decodedText);
 
       // If you want to send to a local server:
-      fetch("https://192.168.1.8:5000/scan", {  // <-- your PC's local IP
+      fetch("https://192.168.1.8:8000/scan", {  // <-- your PC's local IP
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ code: decodedText })
@@ -41,5 +41,6 @@
   </script>
 </body>
 </html>
+
 
 
